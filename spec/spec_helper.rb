@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require "currency_convertor"
 
 RSpec.configure do |config|

@@ -7,8 +7,10 @@ gemspec
 gem "rake", "~> 13.0"
 
 group :development do
-  gem 'guard', '~> 2.18'
-  gem 'guard-rspec', '~> 4.7', '>= 4.7.3'
+  gem "guard", "~> 2.18"
+  gem "guard-rake"
   gem "rspec", "~> 3.0"
   gem "rubocop", "~> 1.21"
+  gem "rubocop-rake", "~> 0.6.0"
+  gem "rubocop-rspec"
 end
