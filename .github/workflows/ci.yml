@@ -22,7 +22,8 @@ jobs:
           bundler-cache: true
       - name: Install all dependencies
         run: bundle install
-      - name: Linting the code
-        run: bundle exec rubocop -c .rubocop.yml
+      - name: RuboCop Linter Action
+        uses: andrewmcodes-archive/rubocop-linter-action@v3.3.0
       - name: Run all unit specs
         run: bundle exec rspec
+    
