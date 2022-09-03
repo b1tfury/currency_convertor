@@ -1,5 +1,7 @@
 # CurrencyConvertor
 
+[![CI](https://github.com/b1tfury/currency_convertor/actions/workflows/ci.yml/badge.svg)](https://github.com/b1tfury/currency_convertor/actions/workflows/ci.yml)
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library
 into a gem. Put your Ruby code in the file `lib/currency_convertor`. To experiment with that code, run `bin/console` for
 an interactive prompt.

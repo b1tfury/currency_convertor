@@ -1,0 +1,28 @@
+name: Ruby
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Ruby ${{ matrix.ruby }}
+    strategy:
+      matrix:
+        ruby:
+          - '3.1.2'
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+      - name: Install all dependencies
+        run: bundle install
+      - name: Linting the code
+        run: bundle exec rubocop
+      - name: Run all unit specs
+        run: bundle exec rspec
