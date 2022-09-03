@@ -24,6 +24,10 @@ jobs:
         run: bundle install
       - name: RuboCop Linter Action
         uses: andrewmcodes-archive/rubocop-linter-action@v3.3.0
+        with:
+          action_config_path: .rubocop.yml
+          exit_on_failure: true
       - name: Run all unit specs
         run: bundle exec rspec
+  
     
