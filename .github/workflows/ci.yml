@@ -23,6 +23,6 @@ jobs:
       - name: Install all dependencies
         run: bundle install
       - name: RuboCop Linter
-        run: ./bin/rubocop -F --config .rubocop.yml
+        run: ./bin/rubocop -F
       - name: Run all unit specs
         run: bundle exec rspec
