@@ -3,7 +3,7 @@ require:
   - rubocop-rake
 AllCops:
   Exclude:
-    - 'vendor/bundle/**/*
+    - 'vendor/bundle/**/*'
     - 'bin/*'
   TargetRubyVersion: 3.1.2
   NewCops: enable
