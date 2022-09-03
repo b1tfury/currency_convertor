@@ -23,6 +23,6 @@ jobs:
       - name: Install all dependencies
         run: bundle install
       - name: Linting the code
-        run: bundle exec rubocop
+        run: bundle exec rubocop -c .rubocop.ym
       - name: Run all unit specs
         run: bundle exec rspec
