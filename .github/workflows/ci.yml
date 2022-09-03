@@ -22,5 +22,7 @@ jobs:
           bundler-cache: true
       - name: Install all dependencies
         run: bundle install
+      - name: Run linter
+        run: ./rubocop -F
       - name: Run all unit specs
         run: bundle exec rspec
