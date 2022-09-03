@@ -6,7 +6,7 @@ AllCops:
   NewCops: enable
   Exclude:
     - './bin/*'
-    - 'vendor/'
+    - './vendor/bundle/*'
 
 Style/StringLiterals:
   Enabled: true
